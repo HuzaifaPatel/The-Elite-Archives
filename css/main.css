@@ -1,0 +1,415 @@
+body {
+  background: #161719 url('/images/bg.png');
+}
+
+
+a{
+  color: #fc0;
+}
+
+/* top header */
+.top{
+  height: 125px;
+  width: 950px;
+  background-color: #161719;
+  margin: -8px auto 0px auto;
+  border: solid;
+  border-color: #333;
+  border-width: thin;
+  position: center;
+}
+
+.top a{
+  text-decoration: none;
+  display: block;
+  width: 950px;
+  height: 125px;
+  color: white;
+}
+
+.top h1{ 
+  margin: 0px auto -8px auto;
+  text-align: center;
+  line-height: 125px;
+  font-size: 40px;
+  color: white;
+  font-family: 'Trebuchet MS',Verdana, sans-serif;
+}
+
+
+/* navigation bar */
+#nav {
+  width: 950px;
+  height: 50px;
+  margin: 0px auto 0px auto;
+  padding: 0px;
+  line-height: 50px;
+  background-color: #878A97;
+  border: solid;
+  /*border-color: #666;*/
+  border-color: #747474;
+  border-width: thin;
+  list-style: none;
+  font-family: 'Trebuchet MS',Verdana, sans-serif;
+}
+
+#nav > li{
+  float: left;
+  width: 150px;
+  height: 50px;
+  /*border-right: 0.5px solid #666;*/
+  border-right: 0.5px solid #747474;
+}
+
+#nav > li > a{
+  text-decoration: none;
+  color: white;
+  display: block;
+  text-align: center;
+  font-size: 20px;
+}
+
+#nav > li:hover{
+  background-color: #414141;
+  width: 150px;
+  height: 50px;
+}
+
+#nav li > ul > li{
+  display: none;
+}
+
+#nav li > ul{
+  position: relative;
+  right: 40px;
+  z-index: 1;
+}
+
+#nav li:hover ul > li{
+  display: block;
+  background-color:#878A97;
+  float: left;
+  width: 150px;
+  height: 50px;
+  text-align: center;
+}
+
+#nav li > ul > li:hover{
+  background-color: #414141;
+}
+
+#nav li > ul > li a{
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+
+
+
+
+
+/* home */
+.home-content{
+  height: 450px;
+  width: 950px;
+  background-color: #161719;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid;
+  border-color: #333;
+  border-width: thin;
+}
+
+.home-content h1{
+  color: white;
+  text-align: center;
+  position: relative;
+  top: 50px;
+}
+
+.home-content p{
+  margin-bottom: 40px;
+  margin-top: 60px;
+  color: white;
+  font-family: 'Trebuchet MS',Verdana, sans-serif;
+  font-size: 14px;
+  text-align: center;
+  position:relative;
+  top: 40px;
+}
+
+.home-content a{
+  text-decoration: none;
+  color: #fc0;
+}
+
+.home-content a:hover{
+  text-decoration: underline;
+}
+
+.home-content li{
+  text-align: center;
+}
+
+.home-content li a{
+  color: #fc0;
+}
+
+
+
+
+/* goldeneye.php*/
+.content{
+  height: 200px;
+  width: 950px;
+  background-color: #161719;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid;
+  border-color: #333;
+  border-width: thin;
+  text-align: center;
+}
+
+.content-links{
+  position: relative;
+  top: 91px;
+}
+
+.content a{
+  font-family: 'Trebuchet MS',Verdana, sans-serif;
+  text-decoration: none;
+  margin-right: 50px;
+}
+
+.content a:hover{
+  text-decoration: underline;
+}
+
+
+
+/* player videos */
+.player-select{
+  height: 200px;
+  width: 950px;
+  background-color: #161719;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid;
+  border-color: #333;
+  border-width: thin;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.player-select h1{
+  color: white;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.players-content{
+  height: auto;
+  padding-bottom: 30px;
+  width: 950px;
+  background-color: #161719;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid;
+  border-color: #333;
+  border-width: thin;
+}
+
+.players-content p{
+  margin-left: 20px;
+  color: white;
+  font-family: 'Trebuchet MS',Verdana,sans-serif;
+}
+
+.players-content .video-table{
+  width: 800px;
+  color: white;
+  font-family: 'Trebuchet MS',Verdana,sans-serif;
+  border-bottom-width: thin;
+  border-left-color: #333;
+  border-top-color: #333;
+  /*word-spacing: 0em;*/
+  /*padding-left: 5%;*/
+  /*padding-right: 5%;*/
+  padding-bottom: 15px;
+  /*border-top-color: #333;*/
+}
+
+.players-content .video-table td{
+  width: 0.5%;
+  white-space: nowrap;
+  table-layout: fixed;
+  overflow: hidden;
+  text-overflow:  ellipsis;
+  word-wrap: break-word;
+  border-color: #333;
+  border-width: 0px;
+  height: 21px;
+  font-size: 16px;
+  text-align: left;
+}
+
+.players-content .video-table tr:last-child td{
+  border: none;
+}
+
+.players-content .video-table tr td{
+  /*border: none;*/
+  border-right: none;
+  border-left: none;
+}
+
+.players-content .video-table tr:first-child{
+  /*border-width: none;*/
+  border-color: transparent;
+  box-shadow: none;
+  border-right: none;
+  border-right-color: #161719;
+  border-top: none;
+  border-top-color: #161719;
+  border-bottom: none;
+  border-bottom-color: #161719;
+  height: 60px;
+  font-size: 18px;
+  text-decoration: underline;
+  text-align: left;
+
+}
+
+.players-content .video-table td a{
+  color: #007BD9;
+  text-decoration: none;
+}
+
+.players-content .video-table td a:hover{
+  color: #007BD9;
+  text-decoration: underline;
+}
+
+.players-content .player-stats p{
+  position: relative;
+  margin-top: 1.5em;
+  text-align: left;
+  top: 16px;
+  font-size: 16px;
+  left: 55px;
+}
+
+.players-content .player-stats a{
+  text-decoration: none;
+}
+
+.players-content .player-stats p a:hover{
+  text-decoration: underline;
+}
+
+.players-content .filter{
+  width: 800px;
+  position: relative;
+  bottom: 80px;
+  left: 300px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+
+.players-content .filter h2{
+  font-family: 'Trebuchet MS',Verdana,sans-serif;
+  position: relative;
+  bottom: 130px;
+  left: 60px;
+  color: white;
+}
+
+.players-content .filter strong{
+  color: white;
+  font-family: 'Trebuchet MS',Verdana,sans-serif;
+}
+
+.players-content .filter .filter-form{
+  margin-top: 30px;
+}
+
+
+
+
+
+
+
+.players-content .dashboard p{
+  font-family: 'Trebuchet MS', Verdana, sans-serif;
+  position: relative;
+  left: 30px;
+  margin: 30px 0px 30px 30px;
+  font-size: 17px;
+}
+
+.players-content .dashboard span a{
+  text-decoration: none;
+  position: relative;
+  margin-left: 35px;
+  left: 30px;
+  font-size: 16px;
+  font-family: 'Trebuchet MS', Verdana, sans-serif;
+}
+
+.players-content .dashboard span a:hover{
+  text-decoration: underline;
+}
+
+.no-data{
+  height: auto;
+  width: 950px;
+  background-color: #161719;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid;
+  border-color: #333;
+  border-width: thin;
+  text-align: center;
+}
+
+.no-data span{
+  font-family: 'Trebuchet MS', Verdana, sans-serif;
+}
+
+.players-content .back{
+  position: relative;
+  text-align: right;
+  right: 21px;
+  bottom: 165px;
+}
+
+.players-content .back p a{
+  font-family: 'Trebuchet MS', Verdana, sans-serif;
+  text-decoration: none;
+}
+
+.players-content .back p a:hover{
+  text-decoration: underline;
+}
