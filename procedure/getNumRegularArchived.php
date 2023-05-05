@@ -10,7 +10,7 @@ class getNumRegularArchived extends Procedure{
 				video_data
 		";
 
-		return $this->db->query($query);
+		return $this->getDB()->query($query);
 	}
 
 	// protected function getNumLTKArchived(){

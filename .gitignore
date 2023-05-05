@@ -1,2 +1,3 @@
 core/Configuration.php
 .htaccess
+sql/merge_dbs.sql
