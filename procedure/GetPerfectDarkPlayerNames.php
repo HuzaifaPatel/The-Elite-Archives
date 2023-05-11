@@ -6,7 +6,7 @@ class GetPerfectDarkPlayerNames extends Procedure{
             SELECT DISTINCT
                 player
             FROM
-                video_data
+                `the-elite`.`the-elite-videos`
             WHERE
                 game = 'pd'
             AND

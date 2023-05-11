@@ -10,31 +10,6 @@
 		<?php array_pop($url)?>
 		<p><a href="<?php echo join("/", $url) ?>">Back</a></p>
 	</div>
-
-<!-- 	<div class="filter">
-
-		<h2>Filter</h2>
-
-		<form class="filter-form" action="filter-players.php" method="GET">
-			<strong>All: </strong> <input type="radio" name="difficulty" value="All" checked /> <br></br>
-			<strong>Agent: </strong> <input type="radio" name="difficulty" value="Agent" /> <br></br>
-			<strong>Secret Agent: </strong> <input type="radio" name="difficulty" value="SA" /> <br></br>
-			<strong>00 Agent: </strong> <input type="radio" name="difficulty" value="00A" /> <br></br>
-			<strong>Stage:</strong>
-
-			<select name="stage">
-				<option value ="">Select Stage</option>
-				<?php foreach ($stages as $stage){ ?>
-					<option value="<?php echo htmlspecialchars($stage['stage']);?>"> <?php echo $stage['stage'] ?> </option>;
-				<?php } ?>
-			</select>
-			
-			<br></br>
-			<input type="submit" value="Show Me">
-		</form>
-
-	</div> -->
-
 		<table class="video-table" align="center" border="1px">
 			<br></br>
 			<tr>
@@ -66,3 +41,4 @@
 			<?php } ?>
 		</table>
 	</div>
+</div>

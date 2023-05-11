@@ -229,7 +229,7 @@ a{
 
 .players-content{
   height: auto;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
   width: 950px;
   background-color: #161719;
   margin-left: auto;
@@ -242,21 +242,18 @@ a{
 .players-content p{
   margin-left: 20px;
   color: white;
-  font-family: 'Trebuchet MS',Verdana,sans-serif;
+  font-family: 'Trebuchet MS',Verdana, sans-serif;
 }
 
 .players-content .video-table{
   width: 800px;
   color: white;
-  font-family: 'Trebuchet MS',Verdana,sans-serif;
-  border-bottom-width: thin;
-  border-left-color: #333;
-  border-top-color: #333;
-  /*word-spacing: 0em;*/
-  /*padding-left: 5%;*/
-  /*padding-right: 5%;*/
-  padding-bottom: 15px;
-  /*border-top-color: #333;*/
+  font-family: 'Trebuchet MS',Verdana, sans-serif;
+
+
+
+
+
 }
 
 .players-content .video-table td{
@@ -266,37 +263,25 @@ a{
   overflow: hidden;
   text-overflow:  ellipsis;
   word-wrap: break-word;
-  border-color: #333;
   border-width: 0px;
   height: 21px;
   font-size: 16px;
-  text-align: left;
+  text-align: center;
 }
 
-.players-content .video-table tr:last-child td{
-  border: none;
+.players-content .video-table td:first-child{
+  text-align: center;
 }
 
-.players-content .video-table tr td{
-  /*border: none;*/
-  border-right: none;
-  border-left: none;
-}
+
 
 .players-content .video-table tr:first-child{
-  /*border-width: none;*/
   border-color: transparent;
-  box-shadow: none;
-  border-right: none;
-  border-right-color: #161719;
-  border-top: none;
   border-top-color: #161719;
-  border-bottom: none;
-  border-bottom-color: #161719;
   height: 60px;
   font-size: 18px;
   text-decoration: underline;
-  text-align: left;
+  text-align: center;
 
 }
 
@@ -400,9 +385,8 @@ a{
 
 .players-content .back{
   position: relative;
+  right: 20px;
   text-align: right;
-  right: 21px;
-  bottom: 165px;
 }
 
 .players-content .back p a{

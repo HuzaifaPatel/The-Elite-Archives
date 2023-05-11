@@ -8,12 +8,12 @@ class GetGoldenEyePlayerNames extends Procedure{
                 player 
             FROM 
                 `the-elite`.`the-elite-videos`
-            -- WHERE
-            --     game = 'ge'
-            -- AND
-            --     player != 'Kev_B.'
-            -- ORDER BY 
-            --     player ASC
+            WHERE
+                game = 'ge'
+            AND
+                player != 'Kev_B.'
+            ORDER BY 
+                player ASC
         ";
 
         return $this->getDB()->query($query);
