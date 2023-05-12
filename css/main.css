@@ -2,6 +2,9 @@ body {
   background: #161719 url('/images/bg.png');
 }
 
+html *{
+  font-family: 'Trebuchet MS',Verdana, sans-serif;
+}
 
 a{
   color: #fc0;
@@ -33,7 +36,6 @@ a{
   line-height: 125px;
   font-size: 40px;
   color: white;
-  font-family: 'Trebuchet MS',Verdana, sans-serif;
 }
 
 
@@ -50,7 +52,6 @@ a{
   border-color: #747474;
   border-width: thin;
   list-style: none;
-  font-family: 'Trebuchet MS',Verdana, sans-serif;
 }
 
 #nav > li{
@@ -132,7 +133,6 @@ a{
   margin-bottom: 40px;
   margin-top: 60px;
   color: white;
-  font-family: 'Trebuchet MS',Verdana, sans-serif;
   font-size: 14px;
   text-align: center;
   position:relative;
@@ -178,7 +178,6 @@ a{
 }
 
 .content a{
-  font-family: 'Trebuchet MS',Verdana, sans-serif;
   text-decoration: none;
   margin-right: 50px;
 }
@@ -239,61 +238,49 @@ a{
   border-width: thin;
 }
 
-.players-content p{
-  margin-left: 20px;
-  color: white;
-  font-family: 'Trebuchet MS',Verdana, sans-serif;
-}
 
 .players-content .video-table{
   width: 800px;
   color: white;
-  font-family: 'Trebuchet MS',Verdana, sans-serif;
-
-
-
-
-
+  padding-bottom: 25px;
+  border: solid;
+  border-width: thin;
+  border-color: #333;
 }
 
+
 .players-content .video-table td{
-  width: 0.5%;
   white-space: nowrap;
   table-layout: fixed;
   overflow: hidden;
   text-overflow:  ellipsis;
   word-wrap: break-word;
   border-width: 0px;
-  height: 21px;
   font-size: 16px;
   text-align: center;
 }
 
-.players-content .video-table td:first-child{
-  text-align: center;
-}
-
-
 
 .players-content .video-table tr:first-child{
   border-color: transparent;
-  border-top-color: #161719;
   height: 60px;
   font-size: 18px;
-  text-decoration: underline;
   text-align: center;
 
 }
+
 
 .players-content .video-table td a{
   color: #007BD9;
   text-decoration: none;
 }
 
+
 .players-content .video-table td a:hover{
   color: #007BD9;
   text-decoration: underline;
 }
+
 
 .players-content .player-stats p{
   position: relative;
@@ -304,13 +291,16 @@ a{
   left: 55px;
 }
 
+
 .players-content .player-stats a{
   text-decoration: none;
 }
 
+
 .players-content .player-stats p a:hover{
   text-decoration: underline;
 }
+
 
 .players-content .filter{
   width: 800px;
@@ -323,18 +313,19 @@ a{
   text-align: left;
 }
 
+
 .players-content .filter h2{
-  font-family: 'Trebuchet MS',Verdana,sans-serif;
   position: relative;
   bottom: 130px;
   left: 60px;
   color: white;
 }
 
+
 .players-content .filter strong{
   color: white;
-  font-family: 'Trebuchet MS',Verdana,sans-serif;
 }
+
 
 .players-content .filter .filter-form{
   margin-top: 30px;
@@ -347,7 +338,6 @@ a{
 
 
 .players-content .dashboard p{
-  font-family: 'Trebuchet MS', Verdana, sans-serif;
   position: relative;
   left: 30px;
   margin: 30px 0px 30px 30px;
@@ -360,7 +350,6 @@ a{
   margin-left: 35px;
   left: 30px;
   font-size: 16px;
-  font-family: 'Trebuchet MS', Verdana, sans-serif;
 }
 
 .players-content .dashboard span a:hover{
@@ -379,9 +368,6 @@ a{
   text-align: center;
 }
 
-.no-data span{
-  font-family: 'Trebuchet MS', Verdana, sans-serif;
-}
 
 .players-content .back{
   position: relative;
@@ -390,7 +376,6 @@ a{
 }
 
 .players-content .back p a{
-  font-family: 'Trebuchet MS', Verdana, sans-serif;
   text-decoration: none;
 }
 

@@ -1,5 +1,5 @@
 <div class=player-select>
-	<form action="/goldeneye/player-selection" method="GET">
+	<form action=<?php echo $_SERVER['REQUEST_URI']; ?> method="GET">
 		<input type="submit" value="Show Me">
 		<select name="player"> <?php
 			foreach ($players as $player){ ?>
