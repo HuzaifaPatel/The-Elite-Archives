@@ -15,10 +15,10 @@ class GetVideosByPlayer extends Procedure{
 
 	public function execute(){
 		$query = "
-			SELECT 
-				* 
-			FROM 
-				`the-elite`.`the-elite-videos` 
+			SELECT
+				*
+			FROM
+				`the-elite`.`the-elite-videos`
 			WHERE 
 				player = '$this->player'
 			AND
@@ -32,7 +32,8 @@ class GetVideosByPlayer extends Procedure{
 
 
 	private function set_player(){
-		$this->player = str_replace('+', '_', explode("player=", $_SERVER[REQUEST_URI])[1]);
+		$this->player = str_replace(' ', '_', $_GET['player']);
+		$this->player = $this->getDB()->real_escape_string($this->player);
 	}
 
 	
