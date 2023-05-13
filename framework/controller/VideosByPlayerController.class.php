@@ -8,6 +8,8 @@ class VideosByPlayerController extends Controller{
 
 	private function PlayerILs(){
 		$this->result = Framework::call('GetVideosByPlayer')->fetch_all(MYSQLI_ASSOC);
+		$this->tpl->color = Framework::call('GetPlayerColor')->fetch_assoc()['hexcode'];
+		$this->tpl->player = $_GET['player'];
 		$this->enhanceArray();
 		$this->tpl->videoData = $this->result;
 		$this->tpl->assign('videos-by-player');

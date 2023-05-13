@@ -1,6 +1,13 @@
 <div class="players-content">
-	<div class="back">
-		<p><a href="<?php echo explode("?", $_SERVER['REQUEST_URI'])[0] ?>">Back</a></p>
+	<div class=above-table>
+		<div class="back">
+			<p><a href="<?php echo explode("?", $_SERVER['REQUEST_URI'])[0] ?>">Back</a></p>
+		</div>
+
+		<div class="player-name">
+			<span>Player: </span> 
+			<span style="color: <?php echo $color ?>"><?php echo $player ?></span>
+		</div>
 	</div>
 
 	<table class="video-table" align="center" border="1px">
@@ -30,5 +37,4 @@
 			</tr>
 		<?php } ?>
 	</table>
-	
 </div>

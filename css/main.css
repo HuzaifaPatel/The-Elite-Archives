@@ -379,9 +379,12 @@ a{
 
 
 .players-content .back{
-  position: relative;
-  right: 20px;
+  width: 925px;
   text-align: right;
+}
+
+.players-content .back p{
+
 }
 
 .players-content .back p a{
@@ -390,4 +393,19 @@ a{
 
 .players-content .back p a:hover{
   text-decoration: underline;
+}
+
+
+.players-content .player-name{
+  text-align: right;
+  width: 925px;
+}
+
+.players-content .player-name span{
+  color: white;
+}
+
+
+.players-content .above-table{
+  height: 30px;
 }

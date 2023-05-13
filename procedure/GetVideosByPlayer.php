@@ -1,15 +1,12 @@
 <?php
 
-
 class GetVideosByPlayer extends Procedure{
-	private $player = null;
 	private $game_selected = null;
 	
 	public function __construct(){
 		parent::__construct();
-		$this->set_player();
+		parent::setPlayer($_GET['player']);
 		$this->set_game_selected();
-		$this->execute();
 	}
 
 
@@ -28,12 +25,6 @@ class GetVideosByPlayer extends Procedure{
 		";
 
 		return $this->getDB()->query($query);
-	}
-
-
-	private function set_player(){
-		$this->player = str_replace(' ', '_', $_GET['player']);
-		$this->player = $this->getDB()->real_escape_string($this->player);
 	}
 
 	
