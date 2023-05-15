@@ -1,7 +1,4 @@
 <div class="players-content">
-	<div class="back">
-		<p></p>
-	</div>
 	<table class="video-table" align="center" border="1px">
 		<tr>
 			<th>Date</th>
