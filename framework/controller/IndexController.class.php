@@ -6,7 +6,6 @@ class IndexController extends Controller{
 		$this->homepage();
 	}
 
-
 	private function homepage(){
 		$result = Framework::call('GetNumRegularArchived');
 
