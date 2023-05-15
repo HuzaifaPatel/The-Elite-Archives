@@ -10,7 +10,7 @@ class GetAllPlayerColors extends Procedure{
 		
 		$query = "
 			SELECT
-				*
+				hexcode
 			FROM 
 				`player_colors`
 		";
