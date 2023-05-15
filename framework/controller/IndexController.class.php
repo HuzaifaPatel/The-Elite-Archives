@@ -8,7 +8,7 @@ class IndexController extends Controller{
 
 
 	private function homepage(){
-		$result = Framework::call('getNumRegularArchived');
+		$result = Framework::call('GetNumRegularArchived');
 
 		$this->tpl->assign('index');
 		$this->tpl->numVideos = $result->fetch_row()[0];

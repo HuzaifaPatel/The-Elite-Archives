@@ -7,7 +7,7 @@ class getNumRegularArchived extends Procedure{
 			SELECT 
 				COUNT(*) 
 			FROM 
-				video_data
+				`the-elite`.`the-elite-videos`
 		";
 
 		return $this->getDB()->query($query);
