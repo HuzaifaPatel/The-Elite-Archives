@@ -3,7 +3,7 @@
 class Procedure{
 	private $db = null;
 	protected $player = null;
-	protected $isLTK = null;
+	protected $db_table_name = null;
 
 	public function __construct(){
 		$this->db = Framework::getDB();
@@ -19,7 +19,11 @@ class Procedure{
 		$this->player = $this->getDB()->real_escape_string($this->player);
 	}
 
-	protected function SetIsLTK(){
-		$this->isLTK = (explode("/", $_SERVER[REQUEST_URI])[2] == "ltk-dltk");
+	protected function setDBName(){
+		if(explode("/", $_SERVER[REQUEST_URI])[2] == "ltk-dltk"){
+			$this->db_table_name = 'the-elite-ltk-videos';
+		}else{
+			$this->db_table_name = 'the-elite-videos';
+		}
 	}
 }

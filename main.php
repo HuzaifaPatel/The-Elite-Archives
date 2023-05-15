@@ -1,7 +1,6 @@
 <!DOCTYPE HTML>
 <?php
-$url = explode('/', $_SERVER['REQUEST_URI']);
-$url = $url[1];
+$url = explode('/', $_SERVER['REQUEST_URI'])[1];
 ?>
 
 <html>
@@ -10,13 +9,14 @@ $url = $url[1];
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
 	</head>
 
+	<header>
+		<div class="container">
+			<div class="top">
+				<h1><a href="/" width=950px>The Video Archives</a></h1>
+			</div>
+	</header>
+	
 	<body>
-		<header>
-			<div class="container">
-				<div class="top">
-					<h1><a href="/" width=950px>The Video Archives</a></h1>
-				</div>
-		</header>
 		
 		<ul id="nav">
 			<?php if($url == ''){ ?>

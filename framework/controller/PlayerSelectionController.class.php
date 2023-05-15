@@ -8,7 +8,7 @@ class PlayerSelectionController extends Controller{
 	}
 
 	private function populate_players(){
-		if(explode('/', $_SERVER['REQUEST_URI'])[1] == 'goldeneye') :
+		if(explode('/', $_SERVER['REQUEST_URI'])[1] == 'goldeneye'):
 			$result = Framework::call('GetGoldenEyePlayerNames');
 		else :
 			$result = Framework::call('GetPerfectDarkPlayerNames');
