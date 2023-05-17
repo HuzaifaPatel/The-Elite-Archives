@@ -42,9 +42,9 @@ a{
 /* navigation bar */
 #nav {
   width: 950px;
-  height: 50px;
+  height: 40px;
   padding: 0px;
-  line-height: 50px;
+  line-height: 40px;
   background-color: #878A97;
   border: solid;
   margin: auto;
@@ -57,7 +57,7 @@ a{
 #nav > li{
   float: left;
   width: 150px;
-  height: 50px;
+  height: 40px;
   border-right: 0.5px solid #747474;
 }
 
@@ -72,7 +72,7 @@ a{
 #nav > li:hover{
   background-color: #414141;
   width: 150px;
-  height: 50px;
+  height: 40px;
 }
 
 #nav li > ul > li{
@@ -89,9 +89,13 @@ a{
   display: block;
   background-color:#878A97;
   float: left;
-  width: 150px;
-  height: 50px;
+  width: 190px;
+  height: 40px;
   text-align: center;
+  border: solid;
+  border-bottom: none;
+  border-color: #747474;
+  border-width: thin;
 }
 
 #nav li > ul > li:hover{

@@ -4,19 +4,7 @@ class Template{
 
 	private $tpl;
 	private $vars = array();
-	// public $colors = array();
 
-
-	public function __construct(){
-		include_once 'main.php';
-
-		// foreach($this->playerColors() as $color){
-		// 	$player = $color['player'];
-		// 	$this->colors[$player] = $color['hexcode'];
-		// }
-
-		// print_r($this->colors);
-	}
 
 	public function __get($key){
 		return $this->vars[$key];
@@ -39,6 +27,7 @@ class Template{
 	}
 
 	public function display(){
+		include_once 'templates/main.tpl';
 		echo $this;
 	}
 }

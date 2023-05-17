@@ -1,13 +1,12 @@
 <?php
 
 class GetVideosByPlayer extends Procedure{
-	private $game_selected = null;
-	
+
 	public function __construct(){
 		parent::__construct();
 		parent::setPlayer($_GET['player']);
 		parent::setDBName();
-		$this->set_game_selected();
+		parent::set_game_selected();
 	}
 
 	public function execute(){
@@ -25,13 +24,5 @@ class GetVideosByPlayer extends Procedure{
 		";
 
 		return $this->getDB()->query($query);
-	}
-	
-	private function set_game_selected(){
-		if(explode("/", $_SERVER[REQUEST_URI])[1] == 'goldeneye'):
-			$this->game_selected = str_replace('goldeneye', 'ge', explode("/", $_SERVER[REQUEST_URI])[1]);
-		else:
-			$this->game_selected = str_replace('perfect-dark', 'pd', explode("/", $_SERVER[REQUEST_URI])[1]);
-		endif;
 	}
 }

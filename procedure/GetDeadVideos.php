@@ -1,44 +1,34 @@
 <?php
 
-class GetDeadVideos extends Database{
+class GetDeadVideos extends Procedure{
 
-    protected function getDeadVideosGoldenEye(){
+	public function __construct(){
+		parent::__construct();
+		parent::set_game_selected();
+		parent::setDBName();	
+	}
+
+	public function execute(){
         $query = "
-            SELECT
-            	* 
-            FROM
-                video_data
-            WHERE
-            	dead_youtube_url = 1
-            AND
-                file_exists = 0
-            AND
-                game = 'ge'
+            SELECT 
+                `$this->db_table_name`.*, `player_colors`.`hexcode`
+            FROM 
+                `the-elite`.`$this->db_table_name` 
+            LEFT JOIN 
+                `the-elite`.`player_colors` 
+            ON 
+                `$this->db_table_name`.`player`=`player_colors`.`player` 
+            WHERE 
+                dead_youtube_url = 1 
+            AND 
+                file_exists = 0 
+            AND 
+                game = 'ge' 
             ORDER BY 
-                published_date ASC
+                published_date 
+            ASC
         ";
 
-        return $this->connect()->query($query);
-        // return (explode("/", $_SERVER['REQUEST_URI'])[2] == 'ltk-dltk') ? $this->connectltk()->query($query) : $this->connect()->query($query);
-    }
-
-    protected function getDeadVideosPerfectDark(){
-        $query = "
-            SELECT
-                * 
-            FROM
-                video_data
-            WHERE
-                dead_youtube_url = 1
-            AND
-                file_exists = 0
-            AND
-                game = 'pd'
-            ORDER BY 
-                published_date ASC
-        ";
-
-        return $this->connect()->query($query);
-        // return (explode("/", $_SERVER['REQUEST_URI'])[2] == 'ltk-dltk') ? $this->connectltk()->query($query) : $this->connect()->query($query);
+        return $this->getDB()->query($query);
     }
 }

@@ -4,6 +4,7 @@ class Procedure{
 	private $db = null;
 	protected $player = null;
 	protected $db_table_name = null;
+	protected $game_selected = null;
 
 	public function __construct(){
 		$this->db = Framework::getDB();
@@ -25,5 +26,13 @@ class Procedure{
 		}else{
 			$this->db_table_name = 'the-elite-videos';
 		}
+	}
+
+	protected function set_game_selected(){
+		if(explode("/", $_SERVER[REQUEST_URI])[1] == 'goldeneye'):
+			$this->game_selected = str_replace('goldeneye', 'ge', explode("/", $_SERVER[REQUEST_URI])[1]);
+		else:
+			$this->game_selected = str_replace('perfect-dark', 'pd', explode("/", $_SERVER[REQUEST_URI])[1]);
+		endif;
 	}
 }
