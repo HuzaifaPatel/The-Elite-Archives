@@ -108,7 +108,9 @@ a{
   display: block;
 }
 
-
+#nav li.active{
+  color: red;
+}
 
 
 
@@ -235,6 +237,7 @@ a{
   background-color: #161719;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 40px;
   border: solid;
   border-color: #333;
   border-width: thin;
@@ -348,24 +351,6 @@ a{
 
 
 
-.players-content .dashboard p{
-  position: relative;
-  left: 30px;
-  margin: 30px 0px 30px 30px;
-  font-size: 17px;
-}
-
-.players-content .dashboard span a{
-  text-decoration: none;
-  position: relative;
-  margin-left: 35px;
-  left: 30px;
-  font-size: 16px;
-}
-
-.players-content .dashboard span a:hover{
-  text-decoration: underline;
-}
 
 .no-data{
   height: auto;
@@ -410,4 +395,29 @@ a{
 
 .players-content .above-table{
   height: 30px;
+}
+
+
+
+
+
+
+.players-content .single-segment-dashboard p{
+  position: relative;
+  left: 30px;
+  margin: 30px 0px 30px 30px;
+  font-size: 17px;
+  color: white;
+}
+
+.players-content .single-segment-dashboard span a{
+  text-decoration: none;
+  position: relative;
+  margin-left: 35px;
+  left: 30px;
+  font-size: 16px;
+}
+
+.players-content .single-segment-dashboard span a:hover{
+  text-decoration: underline;
 }

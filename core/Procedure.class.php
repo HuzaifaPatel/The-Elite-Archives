@@ -28,6 +28,15 @@ class Procedure{
 		}
 	}
 
+
+	protected function setDBNameTutorials(){
+		if(explode("/", $_SERVER[REQUEST_URI])[2] == "ltk-dltk"){
+			$this->db_table_name = 'tutorials-ltk';
+		}else{
+			$this->db_table_name = 'tutorials';
+		}
+	}
+
 	protected function set_game_selected(){
 		if(explode("/", $_SERVER[REQUEST_URI])[1] == 'goldeneye'):
 			$this->game_selected = str_replace('goldeneye', 'ge', explode("/", $_SERVER[REQUEST_URI])[1]);

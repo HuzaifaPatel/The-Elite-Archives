@@ -1,4 +1,5 @@
 core/Configuration.php
 .htaccess
 sql/merge_dbs.sql
+sql/create_tutorials.sql
 .Trash-1000/
