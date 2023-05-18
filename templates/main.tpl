@@ -2,6 +2,7 @@
 	<head>
 		<title>The Video Archive</title>
 		<link rel="stylesheet" type="text/css" href="/css/main.css">
+		<script type="text/javascript" src="/js/nav.js"></script>
 	</head>
 
 	<header>
@@ -16,7 +17,7 @@
 			<li class="nav1" style="background-color: #666"><a href="/">Home</a></li>
 
 
-			<li class="nav2" style="background-color: #666;"><a href="/goldeneye">GoldenEye ⬇ </a>
+			<li class="nav2" style="background-color: #666;"><a href="/goldeneye">GoldenEye ⬇</a>
 				<ul>
 					<li><a href="/goldeneye">Regular Records</a></li>
 					<li><a href="/goldeneye/ltk-dltk">LTK Records</a></li>

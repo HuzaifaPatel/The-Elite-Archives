@@ -74,6 +74,7 @@ class Controller{
 			}
 
 			$data['stage'] = ucfirst($data['stage']);
+			$data['player'] = str_replace('_', ' ', $data['player']);
 		}
 	}
 

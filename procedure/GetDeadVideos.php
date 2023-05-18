@@ -23,7 +23,7 @@ class GetDeadVideos extends Procedure{
             AND 
                 file_exists = 0 
             AND 
-                game = 'ge' 
+                game = '$this->game_selected' 
             ORDER BY 
                 published_date 
             ASC
