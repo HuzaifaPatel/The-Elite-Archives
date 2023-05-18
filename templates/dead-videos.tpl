@@ -1,7 +1,7 @@
 <div class="players-content">
 	<div class=above-table>
 		<div class="back">
-			<p><a href="<?php echo explode("?", $_SERVER['REQUEST_URI'])[0] ?>">Back</a></p>
+			<p><a href="javascript:history.back(1);">Back</a></p>
 		</div>
 	</div>
 

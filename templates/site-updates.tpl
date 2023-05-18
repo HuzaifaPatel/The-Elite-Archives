@@ -39,5 +39,10 @@
 			<td>April 24, 2023</th>
 			<td>Backend Update Begins</td>
 		</tr>
+
+		<tr>
+			<td>May 17, 2023</th>
+			<td>Backend Update Complete</td>
+		</tr>
 	</table>
 </div>
