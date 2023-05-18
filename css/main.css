@@ -212,7 +212,7 @@ a{
   background-color: #161719;
   margin-left: auto;
   margin-right: auto;
-  border: solid;
+  border: none;
   border-color: #333;
   border-width: thin;
   display:flex;
@@ -224,9 +224,6 @@ a{
   color: white;
   text-align: center;
 }
-
-
-
 
 
 
