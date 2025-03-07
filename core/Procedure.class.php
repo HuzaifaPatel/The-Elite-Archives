@@ -21,7 +21,7 @@ class Procedure{
 	}
 
 	protected function setDBName(){
-		if(explode("/", $_SERVER[REQUEST_URI])[2] == "ltk-dltk"){
+		if(explode("/", $_SERVER['REQUEST_URI'])[2] == "ltk-dltk"){
 			$this->db_table_name = 'the-elite-ltk-videos';
 		}else{
 			$this->db_table_name = 'the-elite-videos';
@@ -30,7 +30,7 @@ class Procedure{
 
 
 	protected function setDBNameTutorials(){
-		if(explode("/", $_SERVER[REQUEST_URI])[2] == "ltk-dltk"){
+		if(explode("/", $_SERVER['REQUEST_URI'])[2] == "ltk-dltk"){
 			$this->db_table_name = 'tutorials-ltk';
 		}else{
 			$this->db_table_name = 'tutorials';
@@ -38,10 +38,10 @@ class Procedure{
 	}
 
 	protected function set_game_selected(){
-		if(explode("/", $_SERVER[REQUEST_URI])[1] == 'goldeneye'):
-			$this->game_selected = str_replace('goldeneye', 'ge', explode("/", $_SERVER[REQUEST_URI])[1]);
+		if(explode("/", $_SERVER['REQUEST_URI'])[1] == 'goldeneye'):
+			$this->game_selected = str_replace('goldeneye', 'ge', explode("/", $_SERVER['REQUEST_URI'])[1]);
 		else:
-			$this->game_selected = str_replace('perfect-dark', 'pd', explode("/", $_SERVER[REQUEST_URI])[1]);
+			$this->game_selected = str_replace('perfect-dark', 'pd', explode("/", $_SERVER['REQUEST_URI'])[1]);
 		endif;
 	}
 }
